@@ -1,4 +1,3 @@
-== README
 
 ## Overview
 
@@ -6,17 +5,14 @@ This is a Ruby on Rails app, deployed at <https://health20sf.herokuapp.com/>. Th
 
 ## Configuration
 
-Ruby 2.1.2
-Rails 4.2.4
-Sqlite3 for dev and Postgres for production.
-WEBrick server. 
+Ruby 2.1.2, Rails 4.2.4, Sqlite3 for dev, Postgres for production, and WEBrick server. 
 
 ## Usage
 
   1. $ bundle install
-  * you should create and migrate databases if this is freshly cloned
-  2. $ rails s
-  3. Open up localhost:3000
+  2. You should create and migrate databases if this is freshly cloned
+  3. $ rails s
+  4. Open up localhost:3000
 
 ## Testing
 
