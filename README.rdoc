@@ -1,28 +1,34 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+This is a Ruby on Rails app, deployed at <https://health20sf.herokuapp.com/>. The app is the main website for the Health 2.0 organization (San Francisco chapter).
 
-* Ruby version
+## Configuration
 
-* System dependencies
+Ruby 2.1.2
+Rails 4.2.4
+Sqlite3 for dev and Postgres for production.
+WEBrick server. 
 
-* Configuration
+## Usage
 
-* Database creation
+  1. $ bundle install
+  * you should create and migrate databases if this is freshly cloned
+  2. $ rails s
+  3. Open up localhost:3000
 
-* Database initialization
+## Testing
 
-* How to run the test suite
+Run bundle exec rspec to run test suite.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
 
-* Deployment instructions
+Fork repo, clone locally, create a branch, and create your feature/bug fix/etc. Commit early, commit often. Write tests.
+Make your tests pass as well as the existing suite. Push your branch (NOT MASTER!) to Github. Submit a pull request with a description of your code. Keep your fork updated before, during, and after your merge.
 
-* ...
+## Deployment
 
+Once the PR is merged, the admin will deploy to Heroku. 
+ 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
