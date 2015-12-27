@@ -8,3 +8,25 @@
   text-align: center;
   padding-top: 150px;
 }
+
+nav {
+  margin: 0 auto;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
