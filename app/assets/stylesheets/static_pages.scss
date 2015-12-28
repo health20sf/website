@@ -13,12 +13,12 @@ nav {
   margin: 0 auto;
 }
 
-ul {
+nav ul {
   display: inline-block;
   list-style-type: none;
 }
 
-li {
+nav ul li {
   float: left;
   padding: 10px;
 }
@@ -29,4 +29,29 @@ a {
 
 a:hover {
   font-weight: bold;
+}
+
+#profiles {
+  width: 1024px;
+  margin: auto;
+  text-align: center;
+}
+
+#andy {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#events {
+  width: 1024px;
+  margin: auto;
+  text-align: center;
+}
+
+#events ul {
+  padding: 0px;
+}
+
+ul li {
+  list-style: none;
 }

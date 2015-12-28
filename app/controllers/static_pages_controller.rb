@@ -4,4 +4,12 @@ class StaticPagesController < ApplicationController
     render :root
   end
 
+  def about
+    render :about
+  end
+
+  def events
+    render :events
+  end
+
 end
