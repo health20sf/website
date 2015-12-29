@@ -5,7 +5,8 @@ class UserTest < ActiveSupport::TestCase
   #   assert true
   # end
   def setup
-    @user = User.new(name: "Tested Tester", email: "test@test.com", role: "advisor")
+    @user = User.new(name: "Tested Tester", email: "test@test.com", role: "advisor",
+                     password: "foobar", password_confirmation: "foobar")
   end
 
   test "should be valid" do
@@ -53,6 +54,8 @@ class UserTest < ActiveSupport::TestCase
     assert_not duplicate_user.valid?
   end
 
+  test "password should be present (nonblank)" do
+    @user.password = @user.password_confirmation
 
 
 
