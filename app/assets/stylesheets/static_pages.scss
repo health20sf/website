@@ -32,9 +32,13 @@ a:hover {
 }
 
 #profiles {
-  width: 1024px;
+  width: 500px;
   margin: auto;
   text-align: center;
+}
+
+#profiles ul {
+  padding: 0px;
 }
 
 #andy {
@@ -43,7 +47,7 @@ a:hover {
 }
 
 #events {
-  width: 1024px;
+  width: 750px;
   margin: auto;
   text-align: center;
 }
@@ -55,3 +59,4 @@ a:hover {
 ul li {
   list-style: none;
 }
+
