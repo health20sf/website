@@ -1,7 +1,7 @@
 
 ## Overview
 
-This is a Ruby on Rails app, deployed at <https://health20sf.herokuapp.com/>. The app is the main website for the Health 2.0 organization (San Francisco chapter).
+This is a Ruby on Rails app, which is deployed on Heroku via <https://www.health2sf.com/>. The app is the main website for the Health 2.0 organization (San Francisco chapter).
 
 ## Configuration
 
@@ -16,7 +16,7 @@ Ruby 2.1.2, Rails 4.2.4, Sqlite3 for dev, Postgres for production, and WEBrick s
 
 ## Testing
 
-Run bundle exec rspec to run test suite.
+Run bundle exec rake test to run the test suite.
 
 ## Contributing
 
