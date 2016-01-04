@@ -21,7 +21,7 @@ Run bundle exec rspec to run test suite.
 ## Contributing
 
 Fork repo, clone locally, create a branch, and create your feature/bug fix/etc. Commit early, commit often. Write tests.
-Make your tests pass as well as the existing suite. Push your branch (NOT MASTER!) to Github. Submit a pull request with a description of your code. Keep your fork updated before, during, and after your merge.
+Make your tests pass as well as the existing suite. Push your branch (NOT MASTER!) to Github. Submit a pull request with a description of your code. Once it is peer-reviewed, it will be merged by the peer-reviewer. Keep your fork updated before, during, and after your merge.
 
 ## Deployment
 
