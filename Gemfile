@@ -27,6 +27,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#Using Bootstrap to make stuff a little nicer in development
+gem 'bootstrap-sass', '~> 3.3.6'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -47,4 +49,6 @@ group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
+
+
 
