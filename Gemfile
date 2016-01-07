@@ -28,12 +28,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 
 #Using Bootstrap to make stuff a little nicer in development
+#Remove when we start using React
 gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#Create fake users so we can test
+gem 'faker',                '1.4.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
