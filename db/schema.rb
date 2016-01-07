@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20160107023840) do
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.string   "remember_digest"
     t.boolean  "admin"
     t.string   "activation_digest"
-    t.boolean  "activated"
+    t.boolean  "activated",         default: false
     t.datetime "activated_at"
   end
 
