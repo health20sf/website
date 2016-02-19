@@ -5,7 +5,7 @@ This is a Ruby on Rails app, which is deployed on Heroku via <https://www.health
 
 ## Configuration
 
-Ruby 2.1.2, Rails 4.2.4, Sqlite3 for dev, Postgres for production, and WEBrick server. 
+Ruby 2.2.4, Rails 4.2.4, Sqlite3 for dev, Postgres for production, and WEBrick server. 
 
 ## Usage
 
@@ -25,6 +25,4 @@ Make your tests pass as well as the existing suite. Push your branch (NOT MASTER
 
 ## Deployment
 
-Once the PR is merged, the admin will deploy to Heroku. 
- 
-
+Once the PR is merged, the admin will deploy to Heroku.
