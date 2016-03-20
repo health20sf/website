@@ -1,13 +1,224 @@
-<div id="main">
+<!-- <div id="main">
   <div id="logo">
     <%=image_tag "health20sf.jpg"%>
   </div>
   <br>
   <nav>
-    <ul>
+    <ul> -->
       <!-- <li><a href="#">Home</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/events">Events</a></li> -->
-    <ul>
+    <!-- <ul>
   <nav>
+</div> -->
+
+<div id="header">
+  <div class="container">
+
+    <div class="row">
+
+        <i id="nav-button" class="icon-circle-arrow-down"></i>
+        <h2 id="logo">Health 2.0 | &nbsp <span class="highlight">San Francisco</span></a></h2>
+
+
+      <div id="top-nav" class="">
+        <ul id="fixed-nav">
+          <li class="current"><a href="#home">Home</a></li>
+          <li><a href="#aboutus">Mission</a></li>
+          <li><a href="#services">Team</a></li>
+          <li><a href="#features">Events</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div><!-- End Header -->
+<!-- Big Full screen Banner -->
+<div class="hero bg-fixed bg-color" id="home">
+
+  <div class="slogan">
+    <div  class="vcenter container">
+
+      <div class="row">
+
+        <div class="span12">
+          <h1>The place to connect, learn, and collaborate about digital health.</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- End Full screen banner  -->
+
+<!-- About Us section -->
+<div class="section" id="aboutus">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="span12">
+          <div class="title">
+            <h2>Mission</h2>
+            <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+            <p></p>
+
+          </div>
+          <p class="text-center">
+            We are a group of passionate digital health enthusiasts looking to provide a forum for learning and collaboration.
+          </p>
+          <p class="text-center">
+            To do so, we aim to hold informational events, connect entrepreneurs, and foster a focused network.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- End About US -->
+
+<!-- Services Section -->
+<!-- class section-alt is to give a different color please edit css/style.css to change the color -->
+<div class="section section-alt" id="services">
+  <div class="container">
+    <div class="content">
+      <div class="row" >
+        <div class="title">
+          <h2>Our Team</h2>
+          <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+          <p></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4 i-block">
+          <%=image_tag "andy.jpg" %>
+          <h3>Andy Strunk</h3>
+          <p>President</p>
+        </div>
+        <div class="span4 i-block">
+          <%=image_tag "elizabeth.jpg" %>
+          <h3>Elizabeth Conrady</h3>
+          <p>Vice President</p>
+        </div>
+        <div class="span4 i-block">
+          <%=image_tag "julia.jpg" %>
+          <h3>Julia Coelho</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+      <div class="hr hr-invisible"></div>
+      <div class="row">
+        <div class="span4 i-block">
+          <%=image_tag "scott.jpg" %>
+          <h3>Scott Munroe</h3>
+          <p>Content Guru</p>
+        </div>
+        <div class="span4 i-block">
+          <%=image_tag "akansh.jpg" %>
+          <h3>Akansh Murthy</h3>
+          <p>Web Developer</p>
+        </div>
+        <div class="span4 i-block">
+          <%=image_tag "tyler.jpg" %>
+          <h3>Tyler Zanini</h3>
+          <p>Demo Manager</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Services Section -->
+
+<!-- Features Section -->
+<div class="section section-alt" id="features">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="span12">
+          <div class="title">
+            <h2>Events</h2>
+            <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Registration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>April</td>
+                <td>Ryan Flinn</td>
+                <td>Learn how to increase press for your health IT company</td>
+                <td><a href="https://www.eventbrite.com/e/april-chapter-meeting-health-20-san-francisco-media-panel-tickets-22746938706?ref=estw">Eventbrite</a></td>
+              </tr>
+              <tr>
+                <td>June</td>
+                <td>Holly Potter</td>
+                <td>Learn how to raise funds for your health IT company</td>
+                <td><a href="https://www.eventbrite.com/e/june-chapter-meeting-health-20-san-francisco-tickets-18947252743">Eventbrite</a></td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Parag Vaish</td>
+                <td>Learn how to innovate your health IT company</td>
+                <td><a href="https://www.eventbrite.com/e/july-chapter-meeting-health-20-san-francisco-tickets-21995579370">Eventbrite</a></td>
+              </tr>
+
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Features -->
+<!-- Contact Section -->
+<div class="section" id="contact" >
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="span12">
+          <div class="title">
+            <h2>Contact Us</h2>
+            <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+            <p></p>
+
+          </div>
+        </div>
+        <div class="span8">
+          <iframe width="100%" height="317" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=350%20Townsend%20St%2C%20%23403%20San%20Francisco%2C%20CA%2094107%20USA+(Health%202.0)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+        </div>
+        <div class="span4">
+          <h4>Our Location</h4>
+          <p>350 Townsend St, #403, San Francisco, CA 94107 USA</p>
+          <hr class="grey"/>
+          <h4>Email &amp; Phone</h4>
+          <p>marketing@health2sf.com</p>
+          <p>(415) 992-7527</p>
+          <hr class="grey"/>
+          <h4>Socialize With Us</h4>
+          <div class="social">
+            <a href="#fb"><i class="icon-facebook-sign"></i></a>
+            <a href="#fb"><i class="icon-twitter-sign"></i></a>
+            <a href="#fb"><i class="icon-linkedin-sign"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- End Contact Section -->
+<div id="footer">
+  &copy; 2016 Health 2.0 San Francisco</a>.
 </div>

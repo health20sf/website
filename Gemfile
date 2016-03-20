@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'figaro'
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+# gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -29,7 +29,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 #Using Bootstrap to make stuff a little nicer in development
 #Remove when we start using React
-gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'bootstrap-sass', '~> 3.3.6'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
