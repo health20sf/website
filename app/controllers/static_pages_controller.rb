@@ -1,15 +1,11 @@
 class StaticPagesController < ApplicationController
 
   def root
+    @events = Event.all
     render :root
   end
 
-  def about
-    render :about
+  def register
+    render :register
   end
-
-  def events
-    render :events
-  end
-
 end

@@ -1,24 +1,3 @@
-<div id="main">
-  <div id="logo">
-    <%=image_tag "health20sf.jpg", size: "512x120"%>
-    <br>
-    <br>
-    <p>We are a community that connects, educates and collaborates while promoting new technologies in healthcare.</p>
-    <br>
-    <p>We are currently updating our website. Stay tuned!</p>
-    <br>
-    <button><a href="mailto:smunro@health2sf.com">Contact Us</a></button>
-  </div>
-
-  <!-- <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/events">Events</a></li>
-    <ul>
-  <nav> -->
-</div>
-<!--
 <div id="header">
   <div class="container">
 
@@ -155,12 +134,14 @@
               </tr>
             </thead>
             <tbody>
+              <% @events.each do |event| %>
               <tr>
-                <td>April</td>
-                <td>Ryan Flinn</td>
-                <td>Learn how to increase press for your health IT company</td>
+                <td><%= event.title %></td>
+                <td><%= event.location %></td>
+                <td><%= event.url %></td>
                 <td><a href="https://www.eventbrite.com/e/april-chapter-meeting-health-20-san-francisco-media-panel-tickets-22746938706?ref=estw">Eventbrite</a></td>
               </tr>
+              <% end %>
               <tr>
                 <td>June</td>
                 <td>Holly Potter</td>
@@ -220,4 +201,4 @@
 
 <div id="footer">
   &copy; 2016 Health 2.0 San Francisco</a>.
-</div> -->
+</div>
