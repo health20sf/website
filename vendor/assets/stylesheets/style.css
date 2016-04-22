@@ -273,11 +273,13 @@ body.color-6 #footer {
 	top:0px;
 	border-bottom: 1px solid #D6D6D6;
 	width: 100%;
-	background: rgba(255, 255, 255, 0.9);
+	background: white;
+	opacity: 0.9;
 	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
 	position: fixed;
-	height: 50px;
+	height: 70px;
+	z-index: 1000;
 }
 #nav-button{
 	display: none;
@@ -306,6 +308,8 @@ div#top-nav ul {
 	font-family: 'Montserrat',  sans-serif;
 	float: right;
 	margin-bottom: 0px;
+	margin-top: 10px;
+
 }
 div#top-nav #fluid-nav li, div#top-nav #fixed-nav li {
 	display: inline-block;
@@ -342,6 +346,8 @@ div#top-nav #fixed-nav li.current a {
 	height: 100%;
 	text-align: center;
 	width: 100%;
+	background-image: url("bridge.jpg");
+	background-size: cover;
 }
 .slogan h1{
 	text-shadow: 2px 2px 2px #333333;

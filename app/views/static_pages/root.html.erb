@@ -1,41 +1,33 @@
 <div id="header">
   <div class="container">
-
     <div class="row">
-
         <i id="nav-button" class="icon-circle-arrow-down"></i>
-        <h2 id="logo">Health 2.0 | &nbsp <span class="highlight">San Francisco</span></a></h2>
-
-
+        <!-- <h2 id="logo">Health 2.0 | &nbsp <span class="highlight">San Francisco</span></a></h2> -->
+        <h2 id="logo"><%=image_tag "health20sf.jpg", size: "256x60"%></h2>
       <div id="top-nav" class="">
         <ul id="fixed-nav">
           <li class="current"><a href="#home">Home</a></li>
-          <li><a href="#aboutus">Mission</a></li>
-          <li><a href="#services">Team</a></li>
-          <li><a href="#features">Events</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a class="pulsate" href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
-
     </div>
   </div>
 </div>
 
 <div class="hero bg-fixed bg-color" id="home">
-
   <div class="slogan">
     <div  class="vcenter container">
-
       <div class="row">
-
         <div class="span12">
-          <h1>The place to connect, learn, and collaborate about digital health.</h1>
+          <h1>Health 2.0’s place to connect, learn and collaborate around digital health in San Francisco.</h1>
         </div>
       </div>
     </div>
   </div>
-
-
 </div>
 
 <div class="section" id="aboutus">
@@ -44,25 +36,133 @@
       <div class="row">
         <div class="span12">
           <div class="title">
-            <h2>Mission</h2>
+            <h2>About Us</h2>
             <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
             <p></p>
-
+          </div>
+          <p class="text-center" style="font-size:16px">
+            What if technologists could harness the expertise of the best clinicians to imagine technology that solves today’s healthcare problems?
+          </p>
+          <p class="text-center" style="font-size:16px">
+            We’re a volunteer, non-profit organization pioneering a community to ensure digital-health products meet *real* healthcare system and patient needs.
+          </p>
+          <p class="text-center" style="font-size:16px">
+            We help impart knowledge and make networking connections that work for you -- whether you’re a clinician, technologist, industry executive, marketer, investor, or just interested in learning about innovative health technologies.
+          </p>
+          <br>
+          <div class="title">
+            <h2>Our 3 pillars</h2>
+            <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+            <p></p>
           </div>
           <p class="text-center">
-            We are a group of passionate digital health enthusiasts looking to provide a forum for learning and collaboration.
+            <strong>Connect</strong>
+            <br>
+            We’re bringing clinicians and technology professionals together to vet ideas about new,
+            digital-health products for tackling healthcare’s most challenging problems.
+            <br>
+            <strong>Learn</strong>
+            <br>
+            We’re providing ongoing education through industry-leading keynotes and digital-health
+            demos that incorporate clinician-advised approaches, human-centered design, systems
+            thinking, and go-to- market knowledge.
+            <br>
+            <strong>Collaborate</strong>
+            <br>
+            We’re building bridges and collaborating with other digital-health organizations.
           </p>
+          <br>
+          <div class="title">
+            <h2>Our sponsors</h2>
+            <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+            <p></p>
+          </div>
           <p class="text-center">
-            To do so, we aim to hold informational events, connect entrepreneurs, and foster a focused network.
+            <%=image_tag "athena.jpg", size: "262x83"%>
+            <br>
+            <br>
+            <%=image_tag "nixon.jpg", size: "230x104"%>
           </p>
         </div>
       </div>
     </div>
   </div>
-
 </div>
 
-<div class="section section-alt" id="services">
+<div class="section section-alt" id="events">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="span12">
+          <div class="title">
+            <h2>Upcoming Events</h2>
+            <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+            <h5>Our events are held on the second Tuesday of each month from 6 p.m. to 8 p.m. at athenahealth in San Francisco</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Speaker</th>
+                <th>Demo Companies </th>
+                <th>Description</th>
+                <th>Registration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <% @events.each do |event| %>
+              <tr>
+                <td><%= event.title %></td>
+                <td><%= event.location %></td>
+                <td><%= event.url %></td>
+                <td><a href="https://www.eventbrite.com/e/april-chapter-meeting-health-20-san-francisco-media-panel-tickets-22746938706?ref=estw">Eventbrite</a></td>
+              </tr>
+              <% end %> -->
+              <tr>
+                <td>May 10, 2016</td>
+                <td>Justin Kao,
+                  <br>
+                  Helix
+                </td>
+                <td>
+                  Picnic Health
+                  <br>
+                  Vitagene
+                  <br>
+                  Vitagene
+                </td>
+                <td>Learn how to raise funds for your health IT company</td>
+                <td><a href="http://www.eventbrite.com/e/may-chapter-meeting-health-20-san-francisco-justin-kao-helix-tickets-24656705871"><%=image_tag "eventbrite.jpg", size: "133x51"%></a></td>
+              </tr>
+              <tr>
+                <td>June</td>
+                <td>Holly Potter</td>
+                <td>Lemonade</td>
+                <td>Learn how to raise funds for your health IT company</td>
+                <td><a href="https://www.eventbrite.com/e/june-chapter-meeting-health-20-san-francisco-tickets-18947252743"><%=image_tag "eventbrite.jpg", size: "133x51"%></a></td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Parag Vaish</td>
+                <td>Lemonade</td>
+                <td>Learn how to raise funds for your health IT company</td>
+                <td><a href="https://www.eventbrite.com/e/july-chapter-meeting-health-20-san-francisco-tickets-21995579370"><%=image_tag "eventbrite.jpg", size: "133x51"%></a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="text-center"><a href="http://www.eventbrite.com/o/health-20-san-francisco-chapter-8334986329#past_events">Past events</a></p>
+          <p class="text-center">Company Demos- interested in presenting your digital-health company demo at an upcoming Chapter Meeting? Please email us at <a href="mailto:info@health2sf.com">info@health2sf.com</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section-alt" id="team">
   <div class="container">
     <div class="content">
       <div class="row" >
@@ -74,19 +174,26 @@
       </div>
       <div class="row">
         <div class="span4 i-block">
+          <article>
+            Fill in bio here.
+            <br>
+            <a href="www.linkedin.com"><i style="font-size:2em"class="icon-linkedin-sign"></i></a>
+          </article>
           <%=image_tag "andy.jpg" %>
           <h3>Andy Strunk</h3>
-          <p>President</p>
+          <p>
+            President
+          </p>
         </div>
         <div class="span4 i-block">
           <%=image_tag "elizabeth.jpg" %>
           <h3>Elizabeth Conrady</h3>
-          <p>Vice President</p>
+          <p>Vice President of Marketing</p>
         </div>
         <div class="span4 i-block">
-          <%=image_tag "julia.jpg" %>
-          <h3>Julia Coelho</h3>
-          <p>Project Manager</p>
+          <%=image_tag "matt.jpg" %>
+          <h3>Matthew Larwood</h3>
+          <p>Speaker Bureau Manager</p>
         </div>
       </div>
       <div class="hr hr-invisible"></div>
@@ -94,7 +201,7 @@
         <div class="span4 i-block">
           <%=image_tag "scott.jpg" %>
           <h3>Scott Munroe</h3>
-          <p>Content Guru</p>
+          <p>Community Engagement Manager</p>
         </div>
         <div class="span4 i-block">
           <%=image_tag "akansh.jpg" %>
@@ -107,60 +214,99 @@
           <p>Demo Manager</p>
         </div>
       </div>
+      <div class="hr hr-invisible"></div>
+      <div class="row">
+        <div class="span4 i-block">
+          <article>
+            Matthew co-founded Health 2.0 in 2007 and started The Health Care Blog in 2003. He has been working on health care & IT for more than 20 years.
+          </article>
+          <%=image_tag "matthew.jpg" %>
+          <h3>Matthew Holt</h3>
+          <p>Advisor, Co-Chairman, Health 2.0</p>
+        </div>
+        <div class="span4 i-block">
+          <article>
+            Indu is the entrepreneurial force behind Health 2.0's vision and growth.
+          </article>
+          <%=image_tag "indu.jpg" %>
+          <h3>Indu Subaiya</h3>
+          <p>Advisor, Co-Chairman and CEO, Health 2.0</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="section section-alt" id="features">
+<div class="section" id="volunteer">
   <div class="container">
     <div class="content">
       <div class="row">
-        <div class="span12">
-          <div class="title">
-            <h2>Events</h2>
-            <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-            <p></p>
-          </div>
+        <div class="title">
+          <h2>Volunteer</h2>
+          <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+          <p></p>
         </div>
       </div>
       <div class="row">
-          <table class="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Month</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Registration</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% @events.each do |event| %>
-              <tr>
-                <td><%= event.title %></td>
-                <td><%= event.location %></td>
-                <td><%= event.url %></td>
-                <td><a href="https://www.eventbrite.com/e/april-chapter-meeting-health-20-san-francisco-media-panel-tickets-22746938706?ref=estw">Eventbrite</a></td>
-              </tr>
-              <% end %>
-              <tr>
-                <td>June</td>
-                <td>Holly Potter</td>
-                <td>Learn how to raise funds for your health IT company</td>
-                <td><a href="https://www.eventbrite.com/e/june-chapter-meeting-health-20-san-francisco-tickets-18947252743">Eventbrite</a></td>
-              </tr>
-              <tr>
-                <td>July</td>
-                <td>Parag Vaish</td>
-                <td>Learn how to innovate your health IT company</td>
-                <td><a href="https://www.eventbrite.com/e/july-chapter-meeting-health-20-san-francisco-tickets-21995579370">Eventbrite</a></td>
-              </tr>
-
-            </tbody>
-          </table>
+        <div class="span4 i-block">
+          <article>
+            Manage the planning, registration, and day-of logistics for monthly chapter meetings.
+          </article>
+          <%=image_tag "placeholder.jpg" %>
+          <h3>This could be you!</h3>
+          <p>Event Manager</p>
+        </div>
+        <div class="span4 i-block">
+          <article>
+            Help with mobile check-in and other activities at the monthly chapter meetings.
+          </article>
+          <%=image_tag "placeholder.jpg" %>
+          <h3>This could be you!</h3>
+          <p>On-Site Event Volunteers</p>
+        </div>
+        <div class="span4 i-block">
+          <article>
+            Construct wireframes and create HTML and CSS assets for our developer.
+          </article>
+          <%=image_tag "placeholder.jpg" %>
+          <h3>This could be you!</h3>
+          <p>Website Designer</p>
+        </div>
       </div>
+      <div class="hr hr-invisible"></div>
+      <div class="row">
+        <div class="span4 i-block">
+          <article>
+            Manage the planning, implementation and tracking of marketing projects.
+          </article>
+          <%=image_tag "placeholder.jpg" %>
+          <h3>This could be you!</h3>
+          <p>Project Manager</p>
+        </div>
+        <div class="span4 i-block">
+          <article>
+            Build &amp; manage the chapter’s social media presence.
+          </article>
+          <%=image_tag "placeholder.jpg" %>
+          <h3>This could be you!</h3>
+          <p>Social Media Manager</p>
+        </div>
+        <div class="span4 i-block">
+          <article>
+            Build and execute strategy for formalized programming that unites our technologist and clinicians.
+          </article>
+          <%=image_tag "placeholder.jpg" %>
+          <h3>This could be you!</h3>
+          <p>Clinician-Technologist Program Co-Leads</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <p class=text-center>If any open positions interest you, send resume to: <a href="mailto:info@health2sf.com">info@health2sf.com</a></p>
     </div>
   </div>
 </div>
+
 
 <div class="section" id="contact" >
   <div class="container">
@@ -171,34 +317,43 @@
             <h2>Contact Us</h2>
             <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
             <p></p>
-
           </div>
         </div>
         <div class="span8">
-          <iframe width="100%" height="317" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=350%20Townsend%20St%2C%20%23403%20San%20Francisco%2C%20CA%2094107%20USA+(Health%202.0)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+          <!-- <iframe width="100%" height="317" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=%2050%20Hawthorne%20Street%2C%20San%20Francisco%2C%20CA%2094105+(Meeting%20Location)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe> -->
+          <div style="height:350px;width:770px;max-width:100%;list-style:none; transition: none;overflow:hidden;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=50+Hawthorne+Street,++San+Francisco,+CA+94105&key=AIzaSyD1pxr8rBDhBHkKX5oaq129nOSZm2_Off4"></iframe></div><a class="embedded-map-html" href="http://www.dog-checks.com" id="auth-maps-data">dog-checks.com</a><style>#embedded-map-display .text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div><script src="https://www.dog-checks.com/google-maps-authorization.js?id=e22d904e-e786-9564-adaa-1e8671b52082&c=embedded-map-html&u=1461153447" defer="defer" async="async"></script>
         </div>
         <div class="span4">
-          <h4>Our Location</h4>
-          <p>350 Townsend St, #403, San Francisco, CA 94107 USA</p>
+          <h4>Our Meeting Location</h4>
+          <p>athenahealth
+            <br>
+            50 Hawthorne Street,
+            <br>
+            San Francisco, CA 94105
+          </p>
           <hr class="grey"/>
-          <h4>Email &amp; Phone</h4>
-          <p>marketing@health2sf.com</p>
-          <p>(415) 992-7527</p>
+          <h4>Contact Us</h4>
+          <p>E: <a href="mailto:info@health2sf.com">info@health2sf.com</a> P: (415) 992-7527</p>
+          <p>Health 2.0
+            <br>
+            350 Townsend Street, #403
+            <br>
+            San Francisco, CA 94107
+          </p>
           <hr class="grey"/>
           <h4>Socialize With Us</h4>
           <div class="social">
-            <a href="#fb"><i class="icon-facebook-sign"></i></a>
-            <a href="#fb"><i class="icon-twitter-sign"></i></a>
-            <a href="#fb"><i class="icon-linkedin-sign"></i></a>
+            <a href="https://twitter.com/health2consf"><i class="icon-twitter-sign"></i></a>
+            <a href="https://www.linkedin.com/company/health-2-0"><i class="icon-linkedin-sign"></i></a>
           </div>
-
         </div>
       </div>
     </div>
   </div>
-
 </div>
 
 <div id="footer">
-  &copy; 2016 Health 2.0 San Francisco</a>.
+  &copy; 2016 Health 2.0 | San Francisco Chapter
+  <br>
+  Member of Health 2.0 Advocates Inc, a 501(c)(3) nonprofit.
 </div>

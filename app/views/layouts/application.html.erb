@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <!-- <meta charset="utf-8" /> -->
-  <title>Health 2.0 SF</title>
+  <title>Health 2.0 San Francisco</title>
   <meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="HandheldFriendly" content="true">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <%= favicon_link_tag 'favicon.ico' %>
   <!-- <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/jquery.scrollto.min.js"></script>
@@ -35,6 +36,11 @@
 
     ga('create', 'UA-74192865-1', 'auto');
     ga('send', 'pageview');
+  </script>
+  <script>
+    $( ".pulsate" ).click(function() {
+      $( this ).removeClass( "pulsate" );
+    });
   </script>
 </body>
 </html>

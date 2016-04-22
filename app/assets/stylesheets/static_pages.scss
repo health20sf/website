@@ -2,8 +2,61 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-img {
-  height: 100px;
-  width: auto;
-  border-radius: 50%;
+.pulsate {
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+        color: red;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+#events {
+  a {
+    border-bottom: none;
+  }
+}
+
+#team {
+  a {
+    border-bottom: none;
+  }
+}
+
+#team, #volunteer {
+  img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+  }
+}
+
+.span4 article {
+  opacity: 0;
+  transition: all .5s;
+  height: 185px;
+  width: 370px;
+  background: #fcfcfc;
+  position: absolute;
+}
+
+.span4:hover article {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#volunteer {
+  .span4 article {
+    background: white;
+  }
 }
