@@ -33,9 +33,51 @@
     ga('send', 'pageview');
   </script>
   <script>
-    $( ".pulsate" ).click(function() {
+    $(".pulsate").click(function() {
       $( this ).removeClass( "pulsate" );
     });
+    $( "p.eventmanager" ).hover(
+      function() {
+        $( "article.eventmanager" ).fadeTo( "medium", "1" );
+      }, function() {
+        $( "article.eventmanager" ).fadeTo( "medium", "0" );
+      }
+    );
+    $( "p.onsitevolunteer" ).hover(
+      function() {
+        $( "article.onsitevolunteer" ).fadeTo( "medium", "1" );
+      }, function() {
+        $( "article.onsitevolunteer" ).fadeTo( "medium", "0" );
+      }
+    );
+    $( "p.websitedesigner" ).hover(
+      function() {
+        $( "article.websitedesigner" ).fadeTo( "medium", "1" );
+      }, function() {
+        $( "article.websitedesigner" ).fadeTo( "medium", "0" );
+      }
+    );
+    $( "p.projectmanager" ).hover(
+      function() {
+        $( "article.projectmanager" ).fadeTo( "medium", "1" );
+      }, function() {
+        $( "article.projectmanager" ).fadeTo( "medium", "0" );
+      }
+    );
+    $( "p.socialmediamanager" ).hover(
+      function() {
+        $( "article.socialmediamanager" ).fadeTo( "medium", "1" );
+      }, function() {
+        $( "article.socialmediamanager" ).fadeTo( "medium", "0" );
+      }
+    );
+    $( "p.cliniciantechnologist" ).hover(
+      function() {
+        $( "article.cliniciantechnologist" ).fadeTo( "medium", "1" );
+      }, function() {
+        $( "article.cliniciantechnologist" ).fadeTo( "medium", "0" );
+      }
+    );
   </script>
 </body>
 </html>

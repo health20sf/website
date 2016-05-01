@@ -21,15 +21,54 @@
     }
 }
 
+#aboutus {
+  .pillarcenter {
+    margin: 0 auto;
+    width: 750px;
+    .pillar {
+      background: #F6F9FA;
+      height: 110px;
+      width: 200px;
+      border-radius: 10px;
+      float: left;
+      margin: 10px;
+      padding: 10px;
+      transition: all .2s ease-in-out;
+    }
+    .pillar:hover {
+      -webkit-transform: scale(1.1);
+      -moz-transform:    scale(1.1);
+      -o-transform:      scale(1.1);
+      -ms-transform:     scale(1.1);
+    }
+  }
+}
+
 #events {
   a {
     border-bottom: none;
+  }
+  img {
+    margin: 10px;
   }
 }
 
 #team {
   a {
     border-bottom: none;
+  }
+  .span4 article {
+    opacity: 0;
+    transition: all .5s;
+    height: 185px;
+    width: 370px;
+    background: #fcfcfc;
+    position: absolute;
+  }
+
+  .span4:hover article {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -41,22 +80,20 @@
   }
 }
 
-.span4 article {
-  opacity: 0;
-  transition: all .5s;
-  height: 185px;
-  width: 370px;
-  background: #fcfcfc;
-  position: absolute;
-}
-
-.span4:hover article {
-  opacity: 1;
-  transform: translateY(0px);
-}
 
 #volunteer {
-  .span4 article {
-    background: white;
+  .span4.i-block {
+    margin: 0 auto;
+    width: 100%;
+    article {
+      background: white;
+      opacity: 0;
+      height: 150px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
   }
 }
