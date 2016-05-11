@@ -22,12 +22,15 @@
 }
 
 #aboutus {
+  h4 {
+    text-transform: none;
+  }
   .pillarcenter {
     margin: 0 auto;
     width: 750px;
     .pillar {
       background: #F6F9FA;
-      height: 110px;
+      height: 130px;
       width: 200px;
       border-radius: 10px;
       float: left;
