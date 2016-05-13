@@ -33,49 +33,53 @@
     ga('send', 'pageview');
   </script>
   <script>
+    var counter = 1;
     $(".pulsate").click(function() {
       $( this ).removeClass( "pulsate" );
     });
-    $( "p.eventmanager" ).hover(
+    $( "p.eventmanager" ).click(
       function() {
+        counter += 1;
         $( "article.eventmanager" ).fadeTo( "medium", "1" );
-      }, function() {
-        $( "article.eventmanager" ).fadeTo( "medium", "0" );
+        $( "article.eventmanager" ).css( "z-index", counter );
+        $( "p").css("font-weight", "normal");
+        $( "p.eventmanager").css("font-weight", "bold")
       }
     );
-    $( "p.onsitevolunteer" ).hover(
+    $( "p.onsitevolunteer" ).click(
       function() {
+        counter += 1;
         $( "article.onsitevolunteer" ).fadeTo( "medium", "1" );
-      }, function() {
-        $( "article.onsitevolunteer" ).fadeTo( "medium", "0" );
+        $( "article.onsitevolunteer" ).css( "z-index", counter );
+        $( "p").css("font-weight", "normal");
+        $( "p.onsitevolunteer").css("font-weight", "bold")
       }
     );
-    $( "p.websitedesigner" ).hover(
+    $( "p.websitedesigner" ).click(
       function() {
+        counter += 1;
         $( "article.websitedesigner" ).fadeTo( "medium", "1" );
-      }, function() {
-        $( "article.websitedesigner" ).fadeTo( "medium", "0" );
+        $( "article.websitedesigner" ).css( "z-index", counter );
+        $( "p").css("font-weight", "normal");
+        $( "p.websitedesigner").css("font-weight", "bold")
       }
     );
-    $( "p.projectmanager" ).hover(
+    $( "p.socialmediamanager" ).click(
       function() {
-        $( "article.projectmanager" ).fadeTo( "medium", "1" );
-      }, function() {
-        $( "article.projectmanager" ).fadeTo( "medium", "0" );
-      }
-    );
-    $( "p.socialmediamanager" ).hover(
-      function() {
+        counter += 1;
         $( "article.socialmediamanager" ).fadeTo( "medium", "1" );
-      }, function() {
-        $( "article.socialmediamanager" ).fadeTo( "medium", "0" );
+        $( "article.socialmediamanager" ).css( "z-index", counter );
+        $( "p").css("font-weight", "normal");
+        $( "p.socialmediamanager").css("font-weight", "bold")
       }
     );
-    $( "p.cliniciantechnologist" ).hover(
+    $( "p.cliniciantechnologist" ).click(
       function() {
+        counter += 1;
         $( "article.cliniciantechnologist" ).fadeTo( "medium", "1" );
-      }, function() {
-        $( "article.cliniciantechnologist" ).fadeTo( "medium", "0" );
+        $( "article.cliniciantechnologist" ).css( "z-index", counter );
+        $( "p").css("font-weight", "normal");
+        $( "p.cliniciantechnologist").css("font-weight", "bold")
       }
     );
   </script>

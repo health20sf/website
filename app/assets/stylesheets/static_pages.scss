@@ -60,13 +60,14 @@
   a {
     border-bottom: none;
   }
-  .span4 article {
-    opacity: 0;
-    transition: all .5s;
-    height: 185px;
-    width: 370px;
-    background: #fcfcfc;
-    position: absolute;
+  .span4 {
+    position: relative;
+    article {
+      opacity: 0;
+      transition: all .5s;
+      background: #fcfcfc;
+      position: absolute;
+    }
   }
 
   .span4:hover article {
@@ -98,5 +99,73 @@
       left: 0;
       right: 0;
     }
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #volunteer {
+    .span4.i-block {
+      article {
+        height: 165px;
+      }
+    }
+  }
+  #footer {
+    font-size: 12px;
+  }
+  #home {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  #aboutus {
+    .pillarcenter {
+      width: 100%;
+      .pillar {
+        margin-left: 40px;
+      }
+    }
+  }
+  #events {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+      /*
+  	Label the data
+  	*/
+  	td:nth-of-type(1):before { content: "Date"; }
+  	td:nth-of-type(2):before { content: "Speaker"; }
+  	td:nth-of-type(3):before { content: "Demo Companies"; }
+  	td:nth-of-type(4):before { content: "Description"; }
+  	td:nth-of-type(5):before { content: "Registration"; }
   }
 }
