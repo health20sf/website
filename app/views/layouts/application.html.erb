@@ -55,6 +55,15 @@
         $( "p.onsitevolunteer").css("font-weight", "bold")
       }
     );
+    $( "p.videographer" ).click(
+      function() {
+        counter += 1;
+        $( "article.videographer" ).fadeTo( "medium", "1" );
+        $( "article.videographer" ).css( "z-index", counter );
+        $( "p").css("font-weight", "normal");
+        $( "p.videographer").css("font-weight", "bold")
+      }
+    );
     $( "p.websitedesigner" ).click(
       function() {
         counter += 1;
