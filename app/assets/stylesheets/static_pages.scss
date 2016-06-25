@@ -2,6 +2,53 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 110px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto!important;
+  background-color: #fff;
+  max-width: 600px;
+  max-height: 50%;
+  padding: 50px 40px 50px 35px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #eaeaea;
+  z-index: 100;
+  text-align: center;
+ }
+
+ .modal-mask {
+  display: none;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.5);
+  top: 0;
+  left: 0;
+}
+
+ .modal-close-outer {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+ .modal-close {
+  text-decoration: none;
+  color: #B9B9B9;
+  position: fixed;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+.modal {max-width: 76%; padding: 30px 7%!important;}
+}
+
 .pulsate {
     -webkit-animation: pulsate 1s ease-out;
     -webkit-animation-iteration-count: infinite;
