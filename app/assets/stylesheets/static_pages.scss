@@ -12,7 +12,8 @@
   margin: 0 auto!important;
   background-color: #fff;
   max-width: 600px;
-  max-height: 50%;
+  max-height: 250px;
+  overflow-y: scroll;
   padding: 50px 40px 50px 35px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -45,8 +46,12 @@
   position: fixed;
   cursor: pointer;
 }
+
 @media (max-width: 767px) {
-.modal {max-width: 76%; padding: 30px 7%!important;}
+  .modal {
+    max-width: 76%;
+    padding: 30px 7%!important;
+  }
 }
 
 .pulsate {
