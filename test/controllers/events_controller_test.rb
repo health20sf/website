@@ -12,12 +12,14 @@ class EventsControllerTest < ActionController::TestCase
   end
 
   test "should redirect index when logged in but not admin" do
-    get :index, id: @other_user
+    log_in_as(@other_user)
+    get :index
     assert_redirected_to root_url
   end
 
   test "should get new with admin" do
-    get :new, id: @user
+    log_in_as(@user)
+    get :new
     assert_response :success
   end
 

@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  location: MyString
-  url: MyString
-  time: 2016-01-18 08:31:06
+  speaker_name: MyString
+  speaker_date: MyString
+  description: MyString
+  eventbrite_link: MyString
 
 two:
-  title: MyString
-  location: MyString
-  url: MyString
-  time: 2016-01-18 08:31:06
+  speaker_name: MyString
+  speaker_date: MyString
+  description: MyString
+  eventbrite_link: MyString
