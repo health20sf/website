@@ -1,0 +1,29 @@
+<div id="header">
+  <div class="container">
+    <div class="row">
+      <h1> Event </h1>
+      <br>
+      Name: <%= @event.speaker_name %>
+      <br>
+      Speaker affiliation image: <%= @event.speaker_image %>
+      <br>
+      Speaker affiliation website: <%= @event.speaker_image_url %>
+      <br>
+      Speaker date: <%= @event.speaker_date %>
+      <br>
+      Demo company 1 image: <%= @event.demo_company_one_image %>
+      <br>
+      Demo company 1 website: <%= @event.demo_company_one_url %>
+      <br>
+      Demo company 2 image: <%= @event.demo_company_two_image %>
+      <br>
+      Demo company 1 website: <%= @event.demo_company_two_url %>
+      <br>
+      Event description: <%= @event.description %>
+      <br>
+      Eventbrite link: <%= @event.eventbrite_link %>
+      <br>
+      <%= button_to 'Destroy', @event_path, :confirm => 'Are you sure?', :method => :delete %>
+    </div>
+  </div>
+</div>

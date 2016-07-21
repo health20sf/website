@@ -5,7 +5,4 @@ class StaticPagesController < ApplicationController
     render :root
   end
 
-  def register
-    render :register
-  end
 end

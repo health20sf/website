@@ -11,15 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160118163106) do
+ActiveRecord::Schema.define(version: 20160719085552) do
 
   create_table "events", force: :cascade do |t|
-    t.string   "title",      null: false
-    t.string   "location",   null: false
-    t.string   "url"
-    t.datetime "time",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "speaker_name"
+    t.string   "speaker_image"
+    t.string   "speaker_image_url"
+    t.string   "speaker_date"
+    t.string   "demo_company_one_image"
+    t.string   "demo_company_one_url"
+    t.string   "demo_company_two_image"
+    t.string   "demo_company_two_url"
+    t.string   "description"
+    t.string   "eventbrite_link"
   end
 
   create_table "users", force: :cascade do |t|

@@ -181,6 +181,36 @@
                 <td>Lisa Suennen, Managing Partner, Venture Valkyrie</td>
                 <td><a href="https://www.eventbrite.com/e/december-meeting-lisa-suennen-managing-partner-venture-valkyrie-tickets-26649754132"><%=image_tag "eventbrite.jpg", size: "133x51"%></a></td>
               </tr>
+
+              <% @events.each do |event| %>
+                <tr>
+                  <td class="no-wrap"><%= event.speaker_date %></td>
+                  <td><%= event.speaker_name %>
+                    <br>
+                    <a href="<%= event.speaker_image_url %>">
+                      <img src="<%= event.speaker_image_url %>">
+                    </a>
+                  </td>
+                  <td>
+                    <% if event.demo_company_one_url != "" && event.demo_company_one_image != "" %>
+                      <a href="<%= event.demo_company_one_url %>">
+                        <img src="<%= event.demo_company_one_image %>">
+                      </a>
+                    <% end %>
+                    <br>
+                    <% if event.demo_company_two_url != "" && event.demo_company_two_image != "" %>
+                      <a href="<%= event.demo_company_one_url %>">
+                        <img src="<%= event.demo_company_one_image %>">
+                      </a>
+                    <% end %>
+                    <% if event.demo_company_one_url == "" && event.demo_company_one_image == "" && event.demo_company_two_url == "" && event.demo_company_two_image == "" %>
+                      TBA
+                    <% end %>
+                  </td>
+                  <td><%= event.description %></td>
+                  <td><a href="<%= event.eventbrite_link %>"><%=image_tag "eventbrite.jpg", size: "133x51"%></a></td>
+                </tr>
+              <% end %>
             </tbody>
           </table>
           <p class="text-center"><a href="http://www.eventbrite.com/o/health-20-san-francisco-chapter-8334986329?past=1">Past events</a></p>

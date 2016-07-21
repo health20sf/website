@@ -1,0 +1,14 @@
+<div id="header">
+  <div class="container">
+    <div class="row">
+      <h1> All events </h1>
+      <br>
+      <% @events.each do |event| %>
+        <a href="<%= event_url(event.id) %>">
+          <%= event.speaker_name %>
+          <br>
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>

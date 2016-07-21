@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
   root                'static_pages#root'
-
-  get    'register' => 'static_pages#register'
-
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
@@ -13,6 +10,7 @@ Rails.application.routes.draw do
   get 'password_resets/edit'
 
   resources :users
+  resources :events
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
 end
