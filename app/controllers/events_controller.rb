@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_filter :must_be_admin
+  # before_filter :must_be_admin
 
   def index
     @events = Event.all
@@ -17,6 +17,20 @@ class EventsController < ApplicationController
       redirect_to root_url
     else
       render @event.errors.full_messages
+    end
+  end
+
+  def edit
+    @event = Event.find(params[:id])
+  end
+
+  def update
+    @event = Event.find(params[:id])
+    if @event.update_attributes(event_params)
+      flash[:success] = "Profile updated"
+      redirect_to @event
+    else
+      render 'edit'
     end
   end
 

@@ -23,7 +23,8 @@
       <br>
       Eventbrite link: <%= @event.eventbrite_link %>
       <br>
-      <%= button_to 'Destroy', @event_path, :confirm => 'Are you sure?', :method => :delete %>
+      <%= button_to 'Edit', edit_event_path, :method => :get %>
+      <%= button_to 'Destroy', event_path, :confirm => 'Are you sure?', :method => :delete %>
     </div>
   </div>
 </div>
