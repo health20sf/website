@@ -22,32 +22,7 @@
     <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
   <%= yield %>
-  <!-- <div class="modal">
-    <div class="modal-close-outer">
-  		<div class="modal-close">&times;</div>
-  	</div>
-  </div>
-  <div class="modal-mask"></div> -->
 
-  <script>
-  $(document).ready(function() {
-
-     /*$('.modal-launch').click(function() {
-        $('.modal').show();
-        $('.modal-mask').show();
-      });*/
-
-      // $(document).ready(function () {
-      //     setTimeout(function(){
-      //         $(".modal, .modal-mask").fadeIn(); }, 50);
-      // });
-      // $( ".modal" ).append( $( ".hbspt-form" ) );
-      // $('.modal-close').click(function(){
-      //     $('.modal').hide();
-      //     $('.modal-mask').hide();
-      // });
-  });
-  </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -125,18 +100,6 @@
       e.parentNode.insertBefore(n, e);
     })(document,"script","hs-analytics",300000);
   </script>
-
-  <!--[if lte IE 8]>
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-  <![endif]-->
-
-  <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-  <script>
-    hbspt.forms.create({
-      portalId: '2333626',
-      formId: '9a3ba836-f31f-4869-8d28-d264cc4259a8'
-    });
-  </script> -->
 
 </body>
 </html>

@@ -5,4 +5,8 @@ class StaticPagesController < ApplicationController
     render :root
   end
 
+  def privacy
+    render :privacy
+  end
+
 end
