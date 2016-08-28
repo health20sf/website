@@ -540,17 +540,16 @@
 
 <script>
 $(document).ready(function() {
-  $('.modal-launch').click(function() {
-    $('.modal').show();
-    $('.modal-mask').show();
-  });
 
   $(document).ready(function () {
-    setTimeout(function(){$(".modal, .modal-mask").fadeIn(); }, 50);
+    var url = window.location.href;
+    if (url === 'http://www.health2sf.com/'){
+      setTimeout(function(){$(".modal, .modal-mask").fadeIn(); }, 50);
+    }
   });
 
   $( ".modal" ).append( $( ".hbspt-form" ) );
-   $('.modal-close').click(function(){
+  $('.modal-close').click(function(){
       $('.modal').hide();
       $('.modal-mask').hide();
   });
@@ -565,11 +564,17 @@ $(document).ready(function() {
 <script>
   hbspt.forms.create({
     portalId: '2333626',
-    formId: '9a3ba836-f31f-4869-8d28-d264cc4259a8'
+    formId: '9a3ba836-f31f-4869-8d28-d264cc4259a8',
+    onFormSubmit: function($form) {
+        $form[0].reset();
+    }
   });
   hbspt.forms.create({
     portalId: '2333626',
     formId: '7ff1f00b-988c-4906-bd48-57ba6851b135',
-    target: '.newsletter-form'
+    target: '.newsletter-form',
+    onFormSubmit: function($form) {
+        $form[0].reset();
+    }
   });
 </script>
