@@ -543,7 +543,7 @@ $(document).ready(function() {
 
   $(document).ready(function () {
     var url = window.location.href;
-    if (url === 'http://www.health2sf.com/'){
+    if (url === 'http://localhost:3000/'){
       setTimeout(function(){$(".modal, .modal-mask").fadeIn(); }, 50);
     }
   });
@@ -564,17 +564,11 @@ $(document).ready(function() {
 <script>
   hbspt.forms.create({
     portalId: '2333626',
-    formId: '9a3ba836-f31f-4869-8d28-d264cc4259a8',
-    onFormSubmit: function($form) {
-        $form[0].reset();
-    }
+    formId: '9a3ba836-f31f-4869-8d28-d264cc4259a8'
   });
   hbspt.forms.create({
     portalId: '2333626',
     formId: '7ff1f00b-988c-4906-bd48-57ba6851b135',
-    target: '.newsletter-form',
-    onFormSubmit: function($form) {
-        $form[0].reset();
-    }
+    target: '.newsletter-form'
   });
 </script>
