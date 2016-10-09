@@ -133,7 +133,7 @@
               </tr>
             </thead>
             <tbody>
-              <% @events.each do |event| %>
+              <% @events.reverse.each do |event| %>
                 <tr>
                   <td class="no-wrap"><%= event.speaker_date %></td>
                   <td><%= event.speaker_name %>
