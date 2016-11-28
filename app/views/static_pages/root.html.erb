@@ -143,6 +143,10 @@
                     </a>
                   </td>
                   <td>
+                    <% if event.demo_company_text && event.demo_company_text != "" %>
+                      <%= event.demo_company_text %>
+                    <% end %>
+                    <br>
                     <% if event.demo_company_one_url != "" && event.demo_company_one_image != "" %>
                       <a href="<%= event.demo_company_one_url %>">
                         <img src="<%= event.demo_company_one_image %>">

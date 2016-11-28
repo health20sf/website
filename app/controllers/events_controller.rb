@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_filter :must_be_admin
+  # before_filter :must_be_admin
 
   def index
     @events = Event.all
@@ -54,6 +54,6 @@ class EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:speaker_name, :speaker_image, :speaker_image_url, :speaker_date, :demo_company_one_image, :demo_company_one_url, :demo_company_two_image, :demo_company_two_url, :description, :eventbrite_link)
+    params.require(:event).permit(:speaker_name, :speaker_image, :speaker_image_url, :speaker_date, :demo_company_one_image, :demo_company_text, :demo_company_one_url, :demo_company_two_image, :demo_company_two_url, :description, :eventbrite_link)
   end
 end
