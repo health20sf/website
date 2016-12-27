@@ -7,6 +7,7 @@
     padding-left: 30px;
   }
 }
+
 .alert {
   background-color: red;
   color: black;
@@ -57,14 +58,6 @@
   text-decoration: none;
   color: #050000;
   cursor: pointer;
-}
-
-@media (max-width: 767px) {
-  .modal {
-    max-width: 76%;
-    padding: 30px 7%!important;
-    overflow: scroll;
-  }
 }
 
 #subscribe {
@@ -129,7 +122,6 @@
       overflow: scroll;
     }
   }
-
   .span4:hover article {
     opacity: 1;
     transform: translateY(0px);
@@ -163,6 +155,11 @@
 }
 
 @media screen and (max-width: 766px) {
+  .modal {
+    max-width: 76%;
+    padding: 30px 7%!important;
+    overflow: scroll;
+  }
   #volunteer {
     .span4.i-block {
       article {
@@ -192,41 +189,29 @@
     }
   }
   #events {
-    /* Force table to not be like tables anymore */
     table, thead, tbody, th, td, tr {
       display: block;
     }
-
-    /* Hide table headers (but not display: none;, for accessibility) */
     thead tr {
       position: absolute;
       top: -9999px;
       left: -9999px;
     }
-
     tr { border: 1px solid #ccc; }
-
     td {
-      /* Behave  like a "row" */
       border: none;
       border-bottom: 1px solid #eee;
       position: relative;
       padding-left: 50%;
     }
-
     td:before {
-      /* Now like a table header */
       position: absolute;
-      /* Top/left values mimic padding */
       top: 6px;
       left: 6px;
       width: 45%;
       padding-right: 10px;
       white-space: nowrap;
     }
-      /*
-  	Label the data
-  	*/
   	td:nth-of-type(1):before { content: "Date"; }
   	td:nth-of-type(2):before { content: "Speaker"; }
   	td:nth-of-type(3):before { content: "Demo Companies"; }

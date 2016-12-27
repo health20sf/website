@@ -1,32 +1,83 @@
-/* line 5, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
-.pulsate {
-  -webkit-animation: pulsate 1s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  opacity: 0.5;
+/* line 6, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+.privacy ul {
+  padding-left: 30px;
 }
 
-@-webkit-keyframes pulsate {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1.0;
-    color: red;
-  }
-  100% {
-    opacity: 0.5;
-  }
+/* line 11, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+.alert {
+  background-color: red;
+  color: black;
+  z-index: 999;
+  padding-top: 75px;
+  text-align: center;
 }
-/* line 25, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+
+/* line 19, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+.modal {
+  display: none;
+  position: fixed;
+  top: 110px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto !important;
+  background-color: #fff;
+  max-width: 500px;
+  max-height: 280px;
+  padding: 50px 40px 50px 35px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: auto;
+  border: 2px solid #eaeaea;
+  z-index: 100;
+  text-align: center;
+}
+
+/* line 40, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+.modal-mask {
+  display: none;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+/* line 51, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+.modal-close-outer {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+/* line 57, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+.modal-close {
+  text-decoration: none;
+  color: #050000;
+  cursor: pointer;
+}
+
+/* line 64, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+#subscribe article {
+  margin: 0 auto !important;
+  background-color: #fff;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* line 72, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #aboutus h4.standard-case {
   text-transform: none;
 }
-/* line 28, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 75, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #aboutus .pillarcenter {
   margin: 0 auto;
   width: 750px;
 }
-/* line 31, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 78, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #aboutus .pillarcenter .pillar {
   background: #F6F9FA;
   height: 130px;
@@ -37,7 +88,7 @@
   padding: 10px;
   transition: all .2s ease-in-out;
 }
-/* line 41, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 88, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #aboutus .pillarcenter .pillar:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -45,49 +96,56 @@
   -ms-transform: scale(1.1);
 }
 
-/* line 51, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 98, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #events a {
   border-bottom: none;
 }
-/* line 54, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 101, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #events img {
   margin: 10px;
 }
+/* line 104, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+#events .no-wrap {
+  white-space: nowrap;
+}
 
-/* line 60, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 110, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #team a {
   border-bottom: none;
 }
-/* line 63, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 113, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #team .span4 {
   position: relative;
 }
-/* line 65, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 115, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #team .span4 article {
   opacity: 0;
   transition: all .5s;
   background: #fcfcfc;
   position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
 }
-/* line 73, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 125, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #team .span4:hover article {
   opacity: 1;
   transform: translateY(0px);
 }
 
-/* line 80, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 132, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #team img, #volunteer img {
   height: 100px;
   width: auto;
   border-radius: 50%;
 }
 
-/* line 89, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 141, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #volunteer .span4.i-block {
   margin: 0 auto;
   width: 100%;
 }
-/* line 92, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+/* line 144, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
 #volunteer .span4.i-block article {
   background: white;
   opacity: 0;
@@ -100,88 +158,89 @@
 }
 
 @media screen and (max-width: 766px) {
-  /* line 108, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 158, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  .modal {
+    max-width: 76%;
+    padding: 30px 7% !important;
+    overflow: scroll;
+  }
+
+  /* line 165, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #volunteer .span4.i-block article {
     height: 155px;
   }
 
-  /* line 113, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 170, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #footer {
     font-size: 12px;
   }
 
-  /* line 117, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 174, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #home h1 {
     font-size: 24px;
   }
 
-  /* line 122, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 179, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #aboutus .pillarcenter {
     width: 100%;
   }
-  /* line 124, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 181, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #aboutus .pillarcenter .pillar {
     margin-left: 40px;
   }
 
-  /* line 129, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
-  #events {
-    /* Force table to not be like tables anymore */
-    /* Hide table headers (but not display: none;, for accessibility) */
-    /*
-	Label the data
-	*/
+  /* line 187, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  #team article {
+    font-size: 12px;
   }
-  /* line 131, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+
+  /* line 192, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events table, #events thead, #events tbody, #events th, #events td, #events tr {
     display: block;
   }
-  /* line 136, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 195, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  /* line 142, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 200, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events tr {
     border: 1px solid #ccc;
   }
-  /* line 144, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 201, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events td {
-    /* Behave  like a "row" */
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 50%;
   }
-  /* line 152, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 207, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events td:before {
-    /* Now like a table header */
     position: absolute;
-    /* Top/left values mimic padding */
     top: 6px;
     left: 6px;
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
   }
-  /* line 165, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 215, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events td:nth-of-type(1):before {
     content: "Date";
   }
-  /* line 166, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 216, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events td:nth-of-type(2):before {
     content: "Speaker";
   }
-  /* line 167, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 217, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events td:nth-of-type(3):before {
     content: "Demo Companies";
   }
-  /* line 168, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 218, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events td:nth-of-type(4):before {
     content: "Description";
   }
-  /* line 169, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
+  /* line 219, /Users/akanshmurthy/Desktop/Code/website/app/assets/stylesheets/static_pages.scss */
   #events td:nth-of-type(5):before {
     content: "Registration";
   }
@@ -2115,7 +2174,7 @@ div#top-nav #fixed-nav li.current a {
 	height: 100%;
 	text-align: center;
 	width: 100%;
-	background-image: url("bridge.jpg");
+	background-image: url("http://res.cloudinary.com/dhi8idvga/image/upload/q_auto:good/v1482859365/bridge_sdwy9b.jpg");
 	background-size: cover;
 }
 .slogan h1{

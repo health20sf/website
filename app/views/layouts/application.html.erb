@@ -1,105 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- <meta charset="utf-8" /> -->
-  <title>Health 2.0 San Francisco</title>
-  <meta name="description" content="The place for technologists, clinicians, and go-to-market talent to collaborate around digital health in San Francisco.">
-	<meta name="author" content="Akansh Murthy">
-	<meta name="HandheldFriendly" content="true">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="icon" href="http://res.cloudinary.com/dhi8idvga/image/upload/q_100/v1482859364/favicon_izvafc.png">
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="home color-2">
-<!-- <%= render 'layouts/header' %> -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Health 2.0 San Francisco</title>
+    <meta name="description" content="The place for technologists, clinicians, and go-to-market talent to collaborate around digital health in San Francisco.">
+  	<meta name="author" content="Akansh Murthy">
+  	<meta name="HandheldFriendly" content="true">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="http://res.cloudinary.com/dhi8idvga/image/upload/q_100/v1482859364/favicon_izvafc.png">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="home color-2">
 
-  <% flash.each do |message_type, message| %>
-    <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-      <% end %>
-  <%= yield %>
+    <% flash.each do |message_type, message| %>
+      <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+        <% end %>
+    <%= yield %>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-74192865-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <script>
-    var counter = 1;
-    $(".pulsate").click(function() {
-      $( this ).removeClass( "pulsate" );
-    });
-    $( "p.eventmanager" ).click(
-      function() {
-        counter += 1;
-        $( "article.eventmanager" ).fadeTo( "medium", "1" );
-        $( "article.eventmanager" ).css( "z-index", counter );
-        $( "p").css("font-weight", "normal");
-        $( "p.eventmanager").css("font-weight", "bold")
-      }
-    );
-    $( "p.onsitevolunteer" ).click(
-      function() {
-        counter += 1;
-        $( "article.onsitevolunteer" ).fadeTo( "medium", "1" );
-        $( "article.onsitevolunteer" ).css( "z-index", counter );
-        $( "p").css("font-weight", "normal");
-        $( "p.onsitevolunteer").css("font-weight", "bold")
-      }
-    );
-    $( "p.videographer" ).click(
-      function() {
-        counter += 1;
-        $( "article.videographer" ).fadeTo( "medium", "1" );
-        $( "article.videographer" ).css( "z-index", counter );
-        $( "p").css("font-weight", "normal");
-        $( "p.videographer").css("font-weight", "bold")
-      }
-    );
-    $( "p.websitedesigner" ).click(
-      function() {
-        counter += 1;
-        $( "article.websitedesigner" ).fadeTo( "medium", "1" );
-        $( "article.websitedesigner" ).css( "z-index", counter );
-        $( "p").css("font-weight", "normal");
-        $( "p.websitedesigner").css("font-weight", "bold")
-      }
-    );
-    $( "p.socialmediamanager" ).click(
-      function() {
-        counter += 1;
-        $( "article.socialmediamanager" ).fadeTo( "medium", "1" );
-        $( "article.socialmediamanager" ).css( "z-index", counter );
-        $( "p").css("font-weight", "normal");
-        $( "p.socialmediamanager").css("font-weight", "bold")
-      }
-    );
-    $( "p.cliniciantechnologist" ).click(
-      function() {
-        counter += 1;
-        $( "article.cliniciantechnologist" ).fadeTo( "medium", "1" );
-        $( "article.cliniciantechnologist" ).css( "z-index", counter );
-        $( "p").css("font-weight", "normal");
-        $( "p.cliniciantechnologist").css("font-weight", "bold")
-      }
-    );
-  </script>
-  <script type="text/javascript">
-    (function(d,s,i,r) {
-      if (d.getElementById(i)){return;}
-      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2333626.js';
-      e.parentNode.insertBefore(n, e);
-    })(document,"script","hs-analytics",300000);
-  </script>
+      ga('create', 'UA-74192865-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      var counter = 1;
+      // $( "p.eventmanager" ).click(
+      //   function() {
+      //     counter += 1;
+      //     $( "article.eventmanager" ).fadeTo( "medium", "1" );
+      //     $( "article.eventmanager" ).css( "z-index", counter );
+      //     $( "p").css("font-weight", "normal");
+      //     $( "p.eventmanager").css("font-weight", "bold")
+      //   }
+      // );
+    </script>
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2333626.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
 
-</body>
+  </body>
 </html>

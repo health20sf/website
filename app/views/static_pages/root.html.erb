@@ -3,13 +3,13 @@
     <div class="modal-close">&times;</div>
   </div>
 </div>
+
 <div class="modal-mask"></div>
 
 <div id="header">
   <div class="container">
     <div class="row">
         <i id="nav-button" class="icon-circle-arrow-down"></i>
-        <!-- <h2 id="logo">Health 2.0 | &nbsp <span class="highlight">San Francisco</span></a></h2> -->
         <h2 id="logo"><img src="http://res.cloudinary.com/dhi8idvga/image/upload/c_scale,q_auto:best,w_256/v1482859364/health20sf_ggcksh.jpg"></h2>
       <div id="top-nav" class="">
         <ul id="fixed-nav">
@@ -456,62 +456,16 @@
       </div>
       <!-- <div class="row">
         <div class="span4 i-block">
-          <article class="eventmanager">
-            Manage the planning, registration, and
+          <article class="blabla">
+            Bla bla bla.
             <br>
-            day-of logistics for monthly chapter meetings.
+            Bla bla bla.
             <br>
-            This is a volunteer position.
-          </article>
-          <article class="onsitevolunteer">
-            Help with mobile check-in and other activities
-            <br>
-            at the monthly chapter meetings.
-            <br>
-            This is a volunteer position.
-          </article>
-          <article class="videographer">
-            Film presentations at chapter events
-            <br>
-            Capture interviews and testimonials.
-            <br>
-            Edit and produce quality video for website,
-            <br>
-            YouTube, and other promotional channels.
-            <br>
-            Must have video equipment.
-            <br>
-            This is a volunteer position.
-          </article>
-          <article class="websitedesigner">
-            Construct wireframes and create HTML and CSS
-            <br>
-            assets for our developer.
-            <br>
-            This is a volunteer position.
-          </article>
-          <article class="socialmediamanager">
-            Build &amp; manage the chapter’s social
-            <br>
-            media presence.
-            <br>
-            This is a volunteer position.
-          </article>
-          <article class="cliniciantechnologist">
-            Build and execute strategy for formalized
-            <br>
-            programming that unites our technologist and clinicians.
-            <br>
-            This is a volunteer position.
+            Bla bla bla.
           </article>
           <img src="http://res.cloudinary.com/dhi8idvga/image/upload/q_100/v1482859365/placeholder_tuj5wr.png">
           <h3>This could be you!</h3>
-          <p class="eventmanager">Event Manager</p>
-          <p class="onsitevolunteer">On-Site Event Volunteers</p>
-          <p class="videographer">Videographer</p>
-          <p class="websitedesigner">Website Designer</p>
-          <p class="socialmediamanager">Social Media Manager</p>
-          <p class="cliniciantechnologist">Clinician-Technologist Program Co-Leads</p>
+          <p class="eventmanager">Bla bla bla</p>
         </div>
       </div> -->
       <br>
@@ -539,7 +493,7 @@
   </div>
 </div>
 
-<div class="section" id="contact" >
+<div class="section" id="contact">
   <div class="container">
     <div class="content">
       <div class="row">
@@ -595,21 +549,21 @@
 </div>
 
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
 
-  $(document).ready(function () {
-    var url = window.location.href;
-    if (url === 'http://www.health2sf.com/'){
-      setTimeout(function(){$(".modal, .modal-mask").fadeIn(); }, 50);
-    }
-  });
+    $(document).ready(function () {
+      var url = window.location.href;
+      if (url === 'http://www.health2sf.com/'){
+        setTimeout(function(){$(".modal, .modal-mask").fadeIn(); }, 200);
+      }
+    });
 
-  $( ".modal" ).append( $( ".hbspt-form" ) );
-  $('.modal-close').click(function(){
-      $('.modal').hide();
-      $('.modal-mask').hide();
+    $( ".modal" ).append( $( ".hbspt-form" ) );
+    $('.modal-close').click(function(){
+        $('.modal').hide();
+        $('.modal-mask').hide();
+    });
   });
-});
 </script>
 
 <!-- [if lte IE 8]>
