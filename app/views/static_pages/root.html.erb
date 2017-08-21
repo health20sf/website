@@ -163,7 +163,13 @@
                     <% end %>
                   </td>
                   <td><%= event.description %></td>
-                  <td><a href="<%= event.eventbrite_link %>"><img src="http://res.cloudinary.com/dhi8idvga/image/upload/c_scale,q_auto:best,w_133/v1482859364/eventbrite_nlcbar.png"></a></td>
+                  <td>
+                    <% if event.eventbrite_link != ""%>
+                      <a href="<%= event.eventbrite_link %>"><img src="http://res.cloudinary.com/dhi8idvga/image/upload/c_scale,q_auto:best,w_133/v1482859364/eventbrite_nlcbar.png"></a>
+                    <% else %>
+                      TBA
+                    <% end %>
+                  </td>
                 </tr>
               <% end %>
             </tbody>
