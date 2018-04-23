@@ -5,7 +5,6 @@ class ProfilesController < ApplicationController
   
   def new
     @profile = Profile.new
-    print params
   end
   
   def create
@@ -15,7 +14,7 @@ class ProfilesController < ApplicationController
       flash[:info] = "Profile saved."
       redirect_to user_profile_path(@profile.user_id, @profile.id)
     else
-      render 'new'
+      render :new
     end
   end
   
@@ -26,6 +25,8 @@ class ProfilesController < ApplicationController
   private
   
   def profile_params
-    params.require(:profile).permit(:first_name, :last_name, :email, :title, :profession, :industry, :company_name)
+    params.require(:profile).permit(:first_name, :last_name, :email, :title, 
+      :profession, :industry, :company_name, :phone_number, :industry_expertise,
+      :linkedin_url, :preferred_method_of_contact, :network_topic)
   end
 end
