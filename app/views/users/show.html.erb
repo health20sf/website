@@ -10,3 +10,4 @@
 </div>
 
 <%= button_to 'Events', events_path, :method => :get %>
+<%= button_to 'Profile', user_profile_path(params[:id], @user.profile.id), :method => :get %>
