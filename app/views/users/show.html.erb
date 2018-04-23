@@ -10,4 +10,8 @@
 </div>
 
 <%= button_to 'Events', events_path, :method => :get %>
-<%= button_to 'Profile', user_profile_path(params[:id], @user.profile.id), :method => :get %>
+<% if @profile %> 
+  <%= button_to 'Profile', user_profile_path(params[:id], @profile.id), :method => :get %>
+<% else %>
+  <%= button_to 'Create Profile', new_user_profile_path(params[:id]), :method => :get %>
+<% end %>
