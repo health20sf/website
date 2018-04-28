@@ -9,7 +9,9 @@
   </aside>
 </div>
 
-<%= button_to 'Events', events_path, :method => :get %>
+<% if @user.admin %>
+  <%= button_to 'Events', events_path, :method => :get %>
+<% end %> 
 <% if @profile %> 
   <%= button_to 'Profile', user_profile_path(params[:id], @profile.id), :method => :get %>
 <% else %>
