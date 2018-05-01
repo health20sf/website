@@ -4,12 +4,14 @@ Rails.application.routes.draw do
   get    'privacy' => 'static_pages#privacy'
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
+  get    'search'  => 'profiles#search'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+  
 
   get 'password_resets/new'
   get 'password_resets/edit'
-
+  
   resources :users do 
     resources :profiles
   end
