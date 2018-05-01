@@ -9,11 +9,16 @@
 }
 
 .alert {
-  background-color: red;
   color: black;
   z-index: 999;
   padding-top: 75px;
   text-align: center;
+  .alert-success {
+    background-color: green;
+  }
+  .alert-danger {
+    background-color: red;
+  } 
 }
 
 .modal {

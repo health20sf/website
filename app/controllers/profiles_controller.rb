@@ -3,6 +3,10 @@ class ProfilesController < ApplicationController
   def index
   end
   
+  def search
+    @profiles = params[:term] && !params[:term].blank? ? Profile.search(params[:term]) : []
+  end
+  
   def new
     @profile = Profile.new
   end
