@@ -1,21 +1,27 @@
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
+<div id="header">
+  <div class="container">
+    <div class="row">
+      <h2 class="internal-logo"><img src="http://res.cloudinary.com/dhi8idvga/image/upload/c_scale,q_auto:best,w_256/v1482859364/health20sf_ggcksh.jpg"></h2>
+      <h1>
+        User info
+      </h1>
+      <br />
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
-    </section>
-  </aside>
+      <% if @user.admin %>
+        <%= button_to 'Events', events_path, :method => :get, class: "btn" %>
+      <% end %> 
+      <br />
+      <% if @profile %> 
+        <%= button_to 'Profile', user_profile_path(params[:id], @profile.id), :method => :get, class: "btn" %>
+      <% else %>
+        <%= button_to 'Create Profile', new_user_profile_path(params[:id]), :method => :get, class: "btn" %>
+      <% end %>
+      <br />
+      <%= button_to 'Search users', search_path, :method => :get, class: "btn" %>
+    </div>
+    
+  </div>
 </div>
-
-<% if @user.admin %>
-  <%= button_to 'Events', events_path, :method => :get %>
-<% end %> 
-<% if @profile %> 
-  <%= button_to 'Profile', user_profile_path(params[:id], @profile.id), :method => :get %>
-<% else %>
-  <%= button_to 'Create Profile', new_user_profile_path(params[:id]), :method => :get %>
-<% end %>
-<%= button_to 'Search users', search_path, :method => :get %>
-

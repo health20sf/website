@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
 
   def index
-    @users = User.all
+    @users = User.all.includes(:profile)
   end
 
   def show
