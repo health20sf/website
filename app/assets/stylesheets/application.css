@@ -14,3 +14,15 @@
  *= require_tree ../../../vendor/assets/stylesheets/.
  *= require_self
  */
+.internal-header {
+  background: #3498db;
+  top:0px;
+  border-bottom: 1px solid #D6D6D6;
+  width: 100%;
+  opacity: 0.9;
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
+  position: fixed;
+  height: 70px;
+  z-index: 1000;
+}

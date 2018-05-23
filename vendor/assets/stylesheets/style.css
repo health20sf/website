@@ -273,7 +273,7 @@ body.color-6 #footer {
 	top:0px;
 	border-bottom: 1px solid #D6D6D6;
 	width: 100%;
-	background: #3498db;
+	background: white;
 	opacity: 0.9;
 	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);

@@ -2,32 +2,33 @@
   <div class="container">
     <div class="row">
       <h1> Event </h1>
-      <br>
+      <br />
       Speaker name: <%= @event.speaker_name %>
-      <br>
+      <br />
       Speaker affiliation image: <%= @event.speaker_image %>
-      <br>
+      <br />
       Speaker affiliation website: <%= @event.speaker_image_url %>
-      <br>
+      <br />
       Speaker date: <%= @event.speaker_date %>
-      <br>
-      <br>
+      <br />
       Demo company text (optional): <%= @event.demo_company_text %>
-      <br>
+      <br />
       Demo company 1 image: <%= @event.demo_company_one_image %>
-      <br>
+      <br />
       Demo company 1 website: <%= @event.demo_company_one_url %>
-      <br>
+      <br />
       Demo company 2 image: <%= @event.demo_company_two_image %>
-      <br>
+      <br />
       Demo company 1 website: <%= @event.demo_company_two_url %>
-      <br>
+      <br />
       Event description: <%= @event.description %>
-      <br>
+      <br />
       Eventbrite link: <%= @event.eventbrite_link %>
-      <br>
-      <%= button_to 'Edit', edit_event_path, :method => :get %>
-      <%= button_to 'Destroy', event_path, :confirm => 'Are you sure?', :method => :delete %>
+      <br />
+      <br/>
+      <%= button_to 'Edit', edit_event_path, :method => :get, class: "btn" %>
+      <br/>
+      <%= button_to 'Destroy', event_path, :confirm => 'Are you sure?', :method => :delete, class: "btn" %>
     </div>
   </div>
 </div>
