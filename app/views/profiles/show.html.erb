@@ -1,50 +1,47 @@
-<div id="header">
+<div class="internal-header">
   <div class="container">
     <div class="row">
-      <% provide(:title, 'Profile') %>
-      <% provide(:button_text, 'Profile') %>
-      <h1>Profile</h1>
-      <br>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <p>
-            First name: <%=@profile.first_name %>
-          </p>
-          <p>
-            Last name: <%=@profile.last_name %>
-          </p>
-          <p>
-            Email: <%=@profile.email %>
-          </p>
-          <p>
-            Title: <%=@profile.title %>
-          </p>
-          <p>
-            Profession: <%=@profile.profession %>
-          </p>
-          <p>
-            Industry: <%=@profile.industry %>
-          </p>
-          <p>
-            Company name: <%=@profile.company_name %>
-          </p>
-          <p>
-            Phone number: <%=@profile.phone_number %>
-          </p>
-          <p>
-            Industry expertise: <%=@profile.industry_expertise %>
-          </p>
-          <p>
-            LinkedIn URL: <%=@profile.linkedin_url %>
-          </p>
-          <p>
-            Preferred method of contact:<%=@profile.preferred_method_of_contact %>
-          </p>
-          <p>
-            Topic of interest for networking: <%=@profile.network_topic %>
-          </p>
-        </div>
-      </div>
+      <h2 class="internal-logo"><img src="http://res.cloudinary.com/dhi8idvga/image/upload/c_scale,q_auto:best,w_256/v1482859364/health20sf_ggcksh.jpg"></h2>
+      <% provide(:title, 'User Profile') %>
+      <% provide(:button_text, 'User Profile') %>
+      <h1>User Profile</h1>
+      <br />
+      <p>
+        First name: <%=@profile.first_name %>
+      </p>
+      <p>
+        Last name: <%=@profile.last_name %>
+      </p>
+      <p>
+        Email: <%=@profile.email %>
+      </p>
+      <p>
+        Title: <%=@profile.title %>
+      </p>
+      <p>
+        Profession: <%=@profile.profession %>
+      </p>
+      <p>
+        Industry: <%=@profile.industry %>
+      </p>
+      <p>
+        Company name: <%=@profile.company_name %>
+      </p>
+      <p>
+        Phone number: <%=@profile.phone_number %>
+      </p>
+      <p>
+        Industry expertise: <%=@profile.industry_expertise %>
+      </p>
+      <p>
+        LinkedIn URL: <%=@profile.linkedin_url %>
+      </p>
+      <p>
+        Preferred method of contact:<%=@profile.preferred_method_of_contact %>
+      </p>
+      <p>
+        Topic of interest for networking: <%=@profile.network_topic %>
+      </p>
     </div>
   </div>
 </div>

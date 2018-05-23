@@ -1,66 +1,64 @@
-<div id="header">
+<div class="internal-header">
   <div class="container">
     <div class="row">
+      <h2 class="internal-logo"><img src="http://res.cloudinary.com/dhi8idvga/image/upload/c_scale,q_auto:best,w_256/v1482859364/health20sf_ggcksh.jpg"></h2>
       <% provide(:title, 'Create a profile') %>
       <% provide(:button_text, 'Create a profile') %>
       <h1>Create a Profile</h1>
       <br>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <%= form_for @profile, :url => user_profiles_path do |f|%>
-            <p>
-              <%= f.label :first_name %>
-              <%= f.text_field :first_name, class: 'form-control', required: true %>
-            </p>
-            <p>
-              <%= f.label :last_name %>
-              <%= f.text_field :last_name, class: 'form-control', required: true %>
-            </p>
-            <p>
-              <%= f.label :email %>
-              <%= f.email_field :email, class: 'form-control', required: true %>
-            </p>
-            <p>
-              <%= f.label :title %>
-              <%= f.text_field :title, class: 'form-control', required: true %>
-            </p>
-            <p>
-              <%= f.label :profession %>
-              <%= f.text_field :profession, class: 'form-control', required: true%>
-            </p>
-            <p>
-              <%= f.label :industry %>
-              <%= f.text_field :industry, class: 'form-control', required: true %>
-            </p>
-            <p>
-              <%= f.label :company_name %>
-              <%= f.text_field :company_name, class: 'form-control', required: true %>
-            </p>
-            <p>
-              <%= f.label :phone_number %> (optional)
-              <%= f.telephone_field :phone_number, class: 'form-control' %>
-            </p>
-            <p>
-              <%= f.label :industry_expertise %> (optional)
-              <%= f.text_field :industry_expertise, class: 'form-control' %>
-            </p>
-            <p>
-              <%= f.label :linkedin_url %> (optional)
-              <%= f.url_field :linkedin_url, class: 'form-control' %>
-            </p>
-            <p>
-              <%= f.label :preferred_method_of_contact %> (optional)
-              <%= f.text_field :preferred_method_of_contact, class: 'form-control' %>
-            </p>
-            <p>
-              <%= f.label :network_topic, 'Topic of interest for networking' %> (optional)
-              <%= f.text_field :network_topic, class: 'form-control' %>
-            </p>
-            
-            <%= f.submit yield(:button_text), class: "btn btn-primary" %>
-          <% end %>
-        </div>
-      </div>
+      <%= form_for @profile, :url => user_profiles_path do |f|%>
+        <p>
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name, class: 'form-control', required: true %>
+        </p>
+        <p>
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name, class: 'form-control', required: true %>
+        </p>
+        <p>
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control', required: true %>
+        </p>
+        <p>
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form-control', required: true %>
+        </p>
+        <p>
+          <%= f.label :profession %>
+          <%= f.text_field :profession, class: 'form-control', required: true%>
+        </p>
+        <p>
+          <%= f.label :industry %>
+          <%= f.text_field :industry, class: 'form-control', required: true %>
+        </p>
+        <p>
+          <%= f.label :company_name %>
+          <%= f.text_field :company_name, class: 'form-control', required: true %>
+        </p>
+        <p>
+          <%= f.label :phone_number %> (optional)
+          <%= f.telephone_field :phone_number, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :industry_expertise %> (optional)
+          <%= f.text_field :industry_expertise, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :linkedin_url %> (optional)
+          <%= f.url_field :linkedin_url, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :preferred_method_of_contact %> (optional)
+          <%= f.text_field :preferred_method_of_contact, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :network_topic, 'Topic of interest for networking' %> (optional)
+          <%= f.text_field :network_topic, class: 'form-control' %>
+        </p>
+        
+        <%= f.submit yield(:button_text), class: "btn" %>
+      <% end %>
+
     </div>
   </div>
 </div>

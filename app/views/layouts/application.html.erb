@@ -20,7 +20,8 @@
 
     <% flash.each do |message_type, message| %>
       <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-        <% end %>
+    <% end %>
+    
     <%= yield %>
 
     <script>
@@ -33,7 +34,7 @@
       ga('send', 'pageview');
     </script>
     <script>
-      var counter = 1;
+      // var counter = 1;
       // $( "p.eventmanager" ).click(
       //   function() {
       //     counter += 1;
